@@ -29,7 +29,6 @@ RUN --mount=type=ssh git clone git@github.com:WatchPlant/OrangeBox.git
 
 WORKDIR $HOME/OrangeBox
 RUN git checkout lovro-dev
-RUN git add-remote origin 
 
 RUN apt-get install -y \
     build-essential \
