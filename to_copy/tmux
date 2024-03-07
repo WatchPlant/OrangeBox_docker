@@ -6,7 +6,7 @@ set -g default-terminal "screen-256color"
 set -g terminal-overrides "xterm-color256:smcup@:rmcup@"
 
 ## Mouse support
-# set -g mouse on
+set -g mouse on
 
 ## Shortcuts
 bind -n S-Left  previous-window

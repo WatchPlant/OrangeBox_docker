@@ -5,7 +5,7 @@ ARG HOME=/root
 # Agent forwarding during docker build https://stackoverflow.com/questions/43418188/ssh-agent-forwarding-during-docker-build
 # install ssh client and git
 RUN apt-get update
-RUN apt-get install -y openssh-client git
+RUN apt-get install -y openssh-client git usbutils
 
 # download public key for github.com
 RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
